@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+* {font-family: 'Poppins', sans-serif !important;}
+
+.App {
+    // background-color: #f7f7f7;
+    .ContainerOuter {
+        background-color: #f7f7f7;
+        padding-bottom: 168px;
+    }
+    .MainContainer {
+        background-color: #f7f7f7;
+        margin-top: 1px;
+    }
+    .MenuOuter {
+        border-bottom: 1px solid #efefe4;
+        height: 3.75rem;
+        box-shadow: 0 1px 0 0 rgb(14 48 75 / 12%);
+        align-items: center;
+        background-color: #fff;
+        .MenuOuter.Content {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1780px;
+            margin: 0 auto;
+        }
+        .NavbarLogo {
+            max-width: 110px;
+            width: 100%;
+            max-height: 28px;
+            align-self: center;
+        }
+        p.MuiTypography-root.MuiTypography-inherit.css-37jdci-MuiTypography-root {
+            color: #8f95a3;
+            font-size: 17px;
+        }
+        p.MuiTypography-root.MuiTypography-inherit.css-37jdci-MuiTypography-root:hover {
+            color: #0085e6;
+        }
+    }
+    .NavMenu .MuiList-root {
+        display: flex;
+    }
+    .AlbumBanner {
+        display: flex;
+        padding: 62px 0;
+        padding-top: 36px;
+        .AlbumBannerContent {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding-left: 75px;
+            justify-content: center;
+            .AlbumActions ul {
+                gap: 20px;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                padding: 13px 0;
+                border-top: 1px solid #f1f1f1;
+                border-bottom: 1px solid #f1f1f1;
+                max-width: 685px;
+                .MuiButton-root {
+                    padding: 0;
+                    display: table-cell;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    line-height: inherit;
+                }
+                li {
+                    margin-left: 10px;
+                    margin-top: 0;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.19;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #5c626e;
+                    min-width: 150px;
+                }
+                img.Icons {
+                    max-width: 18px;
+                    width: 100%;
+                    padding-right: 10px;
+                }
+                li:nth-child(4) {
+                    display: flex;
+                    img {
+                        align-self: center;
+                    }
+                }
+            }   
+            .BusinessChips .MuiChip-root  {
+                display: inline-block;
+                margin-top: 0 !important;
+                font-weight: normal;
+                font-size: 13px;
+                background-color: #8f95a3;
+                padding: 5px 10px;
+                border-radius: 6px;
+                margin-right: 10px;
+                color: #FFF;
+                line-height: 1.7;
+            }       
+            h1 {
+                margin: 5px 0;
+                font-size: 35px;
+                // padding-right: 50px;
+                line-height: 42px;
+            }  
+            p {
+                font-size: 16px;
+                letter-spacing: 0.5px;
+                color: #8f95a3;
+                margin: 3px 0;
+            }
+            .RatingOuter {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 0;
+            }
+            .RatingValuesOuter {
+                margin-right: 20px;
+                margin-top: 20px;
+                .RatingValues {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.19;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #3a4649;
+                    margin: 10px 0;
+                }
+                .Rating {
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.17;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #8f95a3;
+                }
+            }
+            .StarsOuter img {
+                max-width: 125px;
+                padding-top: 24px;
+            }
+        }
+        img.NavbarLogo {
+            max-width: 226px;
+            min-width: 226px;
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 7px 4px -5px rgb(0 0 0 / 60%), 0px 3px 15px 2px rgb(0 0 0 / 20%),
+            0 10px 10px -5px rgb(0 0 0 / 30%), inset 0 -1px 3px 0 rgb(0 0 0 / 20%),
+            inset 0 -1px 0 0 rgb(0 0 0 / 12%),
+            inset 0 2px 0 0 rgb(255 255 255 / 20%);
+        }
+    }
+    .DescriptionSection {
+        background-color: #fff;
+        border-radius: 9px;
+        display: flex;
+        margin: 0 -58px;
+        margin-top: -165px;
+        .DescriptionTabs {
+            flex: 1 1 70%;
+            border-top-left-radius: 9px;
+            padding: 24px;
+            // border-right: 1px solid;
+            padding-right: 0;
+            padding-left: 35px;
+            .MuiButtonBase-root {
+                margin-right: 2px;
+                line-height: 1.42857143;
+                border: 1px solid transparent;
+                border-radius: 4px 4px 0 0;
+                text-decoration: none;
+                color: #000;
+                opacity: 0.31;
+                font-size: 1.15rem;
+                font-weight: bold;
+                padding: 10px 24px;        
+                padding-bottom: 18px;    
+                text-transform: capitalize;
+            }
+            .MuiBox-root .MuiTypography-root {
+                text-align: left;
+            }
+            .MuiBox-root .MuiTypography-root h2 {
+                font-size: 24px;
+                margin: 0;
+                padding-top: 8px;
+            }
+            .MuiBox-root .MuiTypography-root p {
+                font-size: 20px;
+            }
+            .LockIconTab {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                img {
+                    padding: 10px 0 5px 10px;
+                }
+            }
+        }
+        .PlayerOuter {
+            flex: 1 1 30%;
+            position: relative;
+            text-align: left;
+            background: linear-gradient(90deg, rgba(250,250,250,1) 1%, rgba(255,255,255,1) 100%);
+            margin-top: 96px;
+            padding: 30px 0;
+            img {
+                width: 80px;
+                border-radius: 4px;
+                position: absolute;
+                top: 52px;
+                right: 46px;
+                z-index: 99;
+            }
+            h3 {
+                font-size: 1.125rem;
+                font-weight: bold;
+                color: #2d3138;
+                text-align: left;
+                padding: 0 30px;
+                margin-bottom: 10px;
+            }
+            .AudioPlayerOuter {
+                padding-bottom: 42px;
+            }
+            li {
+                font-size: 15px;
+                border-bottom: 1px solid #f5f5f5;
+                padding: 6px 0;
+                cursor: pointer;
+            }
+            span.AudioCount {
+                padding-right: 20px;
+                width: 20px;
+                display: inline-block;
+                font-weight: 600;
+            }
+            .PlayList img {
+                position: static;
+                width: 18px;
+                float: right;
+            }
+            .rhap_time.rhap_total-time {
+                display: none;
+            }
+            .PlayList {
+                padding-right: 78px;
+            }
+        }
+        .MuiTabs-flexContainer {
+            gap: 50px;
+        }
+        .AudioPlayerCustom:before {
+            content: 'Overview';
+            position: absolute;
+            top: 0;
+            left: 24%;
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            color: #fff;
+            align-items: center;
+            margin-top: -16px;
+            justify-content: space-evenly;
+            height: 75px;
+        }
+    }
+    li.MuiMenuItem-root.MuiMenuItem-gutters.MuiButtonBase-root.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+        background-color: transparent;
+    }
+    .Mui-selected {
+        color: #3a4649 !important;
+        opacity: 1 !important;
+    }
+    .AudioListTitle {
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 15px;
+        padding: 0 32px;
+        margin: 0;
+    }
+    .AudioPlayerCustom {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 15px;
+        box-shadow: -7px 7px 20px 0 rgb(0 0 0 / 16%);
+        background-image: linear-gradient(to top, #262626 1%, #4d4d4d 98%);
+        padding: 58px 18px 38px 18px;  
+        max-width: 308px;
+        margin: 0 auto;
+        .rhap_play-pause-button {
+            position: absolute;
+            left: 5px;
+            background-image: url('../images/Play-icon.png');
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            top: 46px;
+            svg {
+                opacity: 0;
+            }
+        }
+        .rhap_time.rhap_current-time {
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: left;
+            margin-right: 0;
+            color: #8f95a3;
+            margin-left: 11px;
+            line-height: 9px;
+            margin-top: 0px;    
+        }
+        button.rhap_button-clear.rhap_main-controls-button.rhap_rewind-button, 
+        button.rhap_button-clear.rhap_main-controls-button.rhap_forward-button, 
+        button.rhap_button-clear.rhap_repeat-button,
+        .rhap_volume-controls {
+            display: none;
+        }
+        .rhap_progress-section {
+            flex-direction: row-reverse;
+            max-width: 154px;
+            padding-left: 35px;
+        }
+        .rhap_main.rhap_stacked {
+            max-width: 200px;
+        }
+        .rhap_progress-indicator {
+            background: #008deb;
+        }
+        .rhap_progress-filled {
+            background-color: #008deb;
+        }
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .App .DescriptionSection {
+        margin: 0;
+    }
+    .App .DescriptionSection .PlayerOuter img {
+        right: 30px;
+    }
+
+  }
+  
