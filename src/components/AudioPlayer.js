@@ -5,6 +5,9 @@ import AudioPlayerIcon from '../assets/images/AudioPlayer.png'
 import AudiodOne from '../assets/Audio/AudioOne.mp3'
 import AudiodTwo from '../assets/Audio/AudioTwo.mp3'
 import AudiodThree from '../assets/Audio/AudioThree.mp3'
+import AudioFour from '../assets/Audio/AudioFour.mp3'
+import AudioFive from '../assets/Audio/AudioFive.mp3'
+import AudioSix from '../assets/Audio/AudioSix.mp3'
 import PlayListIcon from '../assets/images/PlayList-icon.png'
 
 
@@ -28,6 +31,22 @@ export default function AudioPlayers() {
             id:3,
             Label: 'Some other points...',
             path: AudiodThree,
+            time:0
+        },
+        {
+            id:4,
+            Label: 'Key Insights 1',
+            path: AudioFour,
+            time:0
+        },        {
+            id:5,
+            Label: 'Sunshine',
+            path: AudioFive,
+            time:0
+        },        {
+            id:6,
+            Label: 'The Gun do talking !',
+            path: AudioSix,
             time:0
         }
     ])
@@ -94,7 +113,7 @@ export default function AudioPlayers() {
             <div className="AudioPlayerOuter">
            
                <span className="TitleLabel">
-                    <span>{currentAudio && currentAudio.Label ? currentAudio.Label :'Overview'}</span>
+                    <span>{currentAudio && currentAudio.Label ? currentAudio.Label :'Track Title'}</span>
                 </span>
                
           
