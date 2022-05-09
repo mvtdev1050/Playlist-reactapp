@@ -34,8 +34,7 @@ export default function AudioPlayers() {
 
     const buttonRef = useRef(null);
 
-    const HandleAudio = (val) => {
-        
+    const HandleAudio = (val) => {        
        
         const list = audioPlayerList.map((item, j) => {
                 if (item.id === currentAudio.id) {
@@ -55,12 +54,10 @@ export default function AudioPlayers() {
     }
 
     const playSong = () =>{
-        console.log('buttonRef',buttonRef.current.audio.current.currentTime)
+        //console.log('buttonRef',buttonRef.current.audio.current.currentTime)
     }
 
     const pauseAudio = () =>{
-        console.log('pause',buttonRef.current.audio.current.currentTime)
-       // buttonRef.current.currentTime = "4.4";
        const list = audioPlayerList.map((item, j) => {
                 if (item.id === currentAudio.id) {
                    item.time = buttonRef.current.audio.current.currentTime;
@@ -89,10 +86,7 @@ export default function AudioPlayers() {
         setAudioPlayerList(list)
     }
 
-      useEffect(() => {    
-
-      },[currentAudio]);
-
+      
     return (
         <>
             <h3>Audiobook</h3>
@@ -109,13 +103,10 @@ export default function AudioPlayers() {
                     src={currentAudio.path}
                     onPlay={playSong}
                     className="AudioPlayerCustom"
-                    ref={buttonRef}
-                   
-                    onPause={pauseAudio}
-                   
+                    ref={buttonRef}                  
+                    onPause={pauseAudio}                   
                     onLoadedMetaData={start}
-                    onEnded={end}
-                    
+                    onEnded={end}                    
                 /></div>
                 <span className="AudioListTitle">Table of Contents</span>
             <ul type="none" className="PlayList">
